@@ -6,9 +6,12 @@ export default class App extends Component {
   render() {
     return (
       <MuiThemeProvider>
-        <div>Nina Louw Resume</div>
-    </MuiThemeProvider>
-
+        <div className="app">
+          <div className="content">
+            {this.props.children}
+          </div>
+        </div>
+      </MuiThemeProvider>
     );
   }
 }
