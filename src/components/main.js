@@ -9,6 +9,7 @@ import List from 'material-ui/List/List';
 import ListItem from 'material-ui/List/ListItem';
 
 class Main extends Component {
+
   render() {
     return (
       <div>
@@ -33,19 +34,10 @@ class Main extends Component {
         </div>
         <div className="section" id="about">
           <div className="row">
-            <List>
-              <ListItem
-                disabled={true}
-                leftAvatar={
-                  <Avatar
-                    src="../images/Nina"
-                    size={50}
-                  />
-                }
-              >
-                Custom Avatar
-              </ListItem>
-            </List>
+            <Avatar
+                src='https://avatars1.githubusercontent.com/u/17684394?v=3&amp;s=460'
+                size={150}
+                style={{margin: 5, border: 0}} />
             <div className="col xs12 s10">
               <p>
                 Lorem ipsum dolor sit amet, curae turpis rutrum diam orci neque egestas, orci egestas, fringilla curabitur luctus, magnis metus nostra. Suscipit pellentesque, porttitor rutrum nunc nullam integer. Congue id aliquam libero sit per, cursus ac, ut id volutpat viverra pede ultrices, arcu per sit aenean neque, commodo urna. Molestie lacus odio neque eum urna, etiam varius sed luctus feugiat, urna euismod placerat vitae, curabitur blandit non ullamcorper eros lobortis, ipsum parturient proin nonummy eros. Eros dolor cupiditate magna scelerisque dolor.
