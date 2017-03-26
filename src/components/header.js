@@ -17,8 +17,9 @@ class Header extends Component {
         <Link to='education'>
           <li>Education</li>
         </Link>
-        
-        <li>Contact</li>
+        <Link to='contact'>
+          <li>Contact</li>
+        </Link>
       </div>
     )
   }
