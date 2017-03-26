@@ -1,20 +1,79 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import {GridList, GridTile} from 'material-ui/GridList';
+import IconButton from 'material-ui/IconButton';
+import Subheader from 'material-ui/Subheader';
+import StarBorder from 'material-ui/svg-icons/toggle/star-border';
 
-class Projects extends Component {
-  render () {
-    return (
-      <div className="projects">
-        <h1>Projects</h1>
-        <ul>
-          <li>Frogger Arcade Game</li>
-          <li>Full Circle Goal Tracker</li>
-          <li>Maps Project</li>
-          <li>Health Tracker</li>
-        </ul>
-      </div>
-    )
+
+const styles = {
+  root: {
+    display: 'flex',
+    flexWrap: 'wrap',
+    justifyContent: 'space-around',
+  },
+  gridList: {
+    width: 700,
+    height: 650,
+    overflowY: 'auto',
+  },
+};
+
+const tilesData = [
+  {
+    img: '../images/gridlist/breakfast.jpg',
+    title: 'Frogger Arcade Game',
+    subtitle: 'Lorem ipsum dolor sit amet, curae turpis rutrum diam orci neque egestas, orci egestas, fringilla curabitur luctus, magnis metus nostra.',
+    author: 'Nina Louw'
+  },
+  {
+    img: '../images/gridlist/camera.jpg',
+    title: 'Goal Tracker',
+    subtitle: 'Lorem ipsum dolor sit amet, curae turpis rutrum diam orci neque egestas, orci egestas, fringilla curabitur luctus, magnis metus nostra.',
+    author: 'Nina Louw'
+  },
+  {
+    img: '../images/gridlist/morning.jpg',
+    title: 'Find My Pet Group Project',
+    subtitle: 'Lorem ipsum dolor sit amet, curae turpis rutrum diam orci neque egestas, orci egestas, fringilla curabitur luctus, magnis metus nostra.',
+    author: 'Nina Louw'
+  },
+  {
+    img: '../images/gridlist/plant.jpg',
+    title: 'Food Explorer',
+    subtitle: 'Lorem ipsum dolor sit amet, curae turpis rutrum diam orci neque egestas, orci egestas, fringilla curabitur luctus, magnis metus nostra.',
+    author: 'Nina Louw'
   }
-}
+];
+
+const Projects = () => (
+  <div className='projects'>
+    <div style={styles.root}>
+      <GridList
+        cols={2}
+        cellHeight={200}
+        padding={1}
+        style={styles.gridList}
+      >
+        {tilesData.map((tile) => (
+          <GridTile
+            key={tile.img}
+            title={tile.title}
+            subtitle={tile.subtitle}
+            actionIcon={<IconButton><StarBorder color="white" /></IconButton>}
+            actionPosition="left"
+            titlePosition="top"
+            titleBackground="linear-gradient(to bottom, rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.3) 70%,rgba(0,0,0,0) 100%)"
+            cols={tile.featured ? 2 : 1}
+            rows={tile.featured ? 2 : 1}
+            containerElement={tile.containerElement}
+          >
+            <img src={tile.img} />
+          </GridTile>
+        ))}
+      </GridList>
+    </div>
+</div>
+);
 
 export default Projects;
