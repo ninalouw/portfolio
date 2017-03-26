@@ -9,9 +9,11 @@ class Header extends Component {
           <li>Nina Louw</li>
         </Link>
         <Link to='about'>
-        <li>About</li>
+          <li>About</li>
         </Link>
-        <li>Projects</li>
+        <Link to='projects'>
+          <li>Projects</li>
+        </Link>
         <li>Education</li>
         <li>Contact</li>
       </div>
