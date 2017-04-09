@@ -7,7 +7,6 @@ import Projects from './components/projects';
 import Education from './components/education';
 import Contact from './components/contact';
 
-
 export default (
   <Route path="/" component={App} >
     <IndexRoute component={Main} />
