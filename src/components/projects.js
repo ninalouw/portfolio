@@ -4,6 +4,11 @@ import {GridList, GridTile} from 'material-ui/GridList';
 import IconButton from 'material-ui/IconButton';
 import Subheader from 'material-ui/Subheader';
 import StarBorder from 'material-ui/svg-icons/toggle/star-border';
+import pet from '../images/gridlist/FindMyPet.jpg';
+import food from '../images/gridlist/FoodExplorer.jpg';
+import frogger from '../images/gridlist/Frogger.jpg';
+import goal from '../images/gridlist/goal.jpg';
+
 
 
 const styles = {
@@ -13,33 +18,33 @@ const styles = {
     justifyContent: 'space-around',
   },
   gridList: {
-    width: 700,
-    height: 650,
+    width: 500,
+    height: 450,
     overflowY: 'auto',
   },
 };
 
 const tilesData = [
   {
-    img: '../images/gridlist/breakfast.jpg',
+    img: frogger,
     title: 'Frogger Arcade Game',
     subtitle: 'Lorem ipsum dolor sit amet, curae turpis rutrum diam orci neque egestas, orci egestas, fringilla curabitur luctus, magnis metus nostra.',
     author: 'Nina Louw'
   },
   {
-    img: '../images/gridlist/camera.jpg',
+    img: goal,
     title: 'Goal Tracker',
     subtitle: 'Lorem ipsum dolor sit amet, curae turpis rutrum diam orci neque egestas, orci egestas, fringilla curabitur luctus, magnis metus nostra.',
     author: 'Nina Louw'
   },
   {
-    img: '../images/gridlist/morning.jpg',
+    img: pet,
     title: 'Find My Pet Group Project',
     subtitle: 'Lorem ipsum dolor sit amet, curae turpis rutrum diam orci neque egestas, orci egestas, fringilla curabitur luctus, magnis metus nostra.',
     author: 'Nina Louw'
   },
   {
-    img: '../images/gridlist/plant.jpg',
+    img: food,
     title: 'Food Explorer',
     subtitle: 'Lorem ipsum dolor sit amet, curae turpis rutrum diam orci neque egestas, orci egestas, fringilla curabitur luctus, magnis metus nostra.',
     author: 'Nina Louw'

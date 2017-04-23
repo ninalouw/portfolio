@@ -14,7 +14,19 @@ module.exports = {
       query: {
         presets: ['react', 'es2015', 'stage-1']
       }
-    }]
+    }],
+    rules: [
+      {
+        test: /\.(jpe?g|png|gif|svg)$/,
+        use: [
+          {
+            loader: 'url-loader',
+            options: { limit: 40000 },
+          },
+          'image-webpack-loader',
+        ]
+      }
+    ]
   },
   resolve: {
     extensions: ['', '.js', '.jsx']
