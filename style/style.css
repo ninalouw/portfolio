@@ -5,45 +5,196 @@ html, body, div {
   box-sizing: border-box;
 }
 
-.header-bar {
-  background-color: #42C299;
-  padding: 20px;
+.my-navbar {
   margin: auto;
   width: 100vw;
   height: 90px;
   position: fixed;
   overflow: hidden;
-  display: flex;
   top:0;
-  left:0;
 }
 
-.header-bar li {
+.navbar-ul {
+  display: flex;
+  background-color: white;
+  overflow: hidden;
+  text-align: center;
+  margin: auto;
+  padding: 0;
+  width:100vw;
+}
+
+.navbar-li {
  flex-flow: row wrap;
  justify-content: space-around;
  display: block;
- color: rgb(247, 234, 231);
- text-align: center;
- padding: 16px 18px;
+ padding: 5px 30px 5px 30px;
+ border:none;
+ width:25%;
+ text-transform: uppercase;
+ font-family: 'Clear Sans', sans-serif;
+ font-weight: 300;
  text-decoration: none;
- font-size: 20px;
+ font-size: 1.2rem;
+ color: black;
+ text-align: center;
+ text-decoration: none;
 }
 
-.header-bar li:first-child{
+.navbar-logo {
   margin-right: 100px;
 }
 
-/* Change the color of links on hover */
-.header-bar li:hover {
-    background-color: #62e4bb;
+.navbar-ul > a {
+  text-decoration: none;
+}
+
+/* underline on hover */
+.navbar-ul > a:hover {
     text-decoration: none;
+    color: black;
+    box-shadow: inset 0 -2px 0 0 #064CC2;
 }
 
 /* Add a color to the active/current link */
-.header-bar li.active {
-    background-color: rgb(241, 18, 72);
+.navbar-li:active {
+    opacity: 0.5;
     color: white;
 }
+
+/*Banner area styling */
+.header-name {
+  color: white;
+  font-family: 'Playfair Display', serif;
+  font-size: 5rem;
+  padding-right:60px;
+  width:600px;
+  margin-bottom: 0px;
+  margin-top:20px;
+  padding-bottom: 0px;
+}
+
+.header-para {
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2.4rem;
+  padding-left:60px;
+  text-align: left;
+  margin-top: 10px;
+}
+
+.header-greet {
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.2rem;
+  padding-left:60px;
+  text-align: left;
+  margin-top: 20px;
+  margin-left:170px;
+  padding:0px;
+}
+
+
+/* The hero image */
+.hero-image {
+    /*background-repeat: no-repeat;*/
+    width:100%;
+    height:600px;
+    /*background-image:url("../img/home/woman_hero.jpg");*/
+    /*background-size:cover;
+    background-position:center;*/
+    /*background-attachment:fixed;*/
+    /*overflow: hidden;*/
+    text-align:center;
+    padding:50px;
+    /*background-color:rgb(13, 11, 120);*/
+    background-image: linear-gradient(-360deg, #020085, #0b6ca3);
+}
+
+
+
+
+/* text in middle of hero image */
+.hero-text {
+    text-align: left;
+    margin-top:50px;
+    padding-top:10px;
+    margin-left:auto;
+    margin-right:auto;
+    width:100%;
+    color: white;
+    font-weight: 300;
+}
+
+.hero-circle{
+  background-color: rgb(0, 188, 212);
+  width:400px;
+  height:400px;
+  border-radius: 200px;
+  -webkit-box-shadow: 3px 2px 9px 1px rgba(5,11,54,1);
+-moz-box-shadow: 3px 2px 9px 1px rgba(5,11,54,1);
+box-shadow: 3px 2px 9px 1px rgba(5,11,54,1);
+}
+
+.facts-heading {
+  font-family: 'Playfair Display', serif;
+  font-weight:400;
+  font-size: 2rem;
+  color: rgb(12, 7, 115);
+  text-align: left;
+  margin-left: 40px;
+  margin-right: auto;
+  width:100%;
+}
+
+.facts-para {
+  font-family: 'Open Sans', sans-serif;
+  font-weight:400;
+  font-size: 1.5rem;
+  color: black;
+  text-align: left;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom:60px;
+  margin-top:20px;
+  width:100%;
+}
+
+.facts-para > p {
+  margin-top:12px;
+  margin-bottom:12px;
+}
+
+.fa-icon {
+  color: white;
+  margin: 12px;
+  /*transform: rotate(10deg);*/
+}
+
+.footer {
+  width: 100%;
+  height: 100px;
+  margin-left: auto;
+  margin-right:auto;
+  padding:15px;
+  display: flex;
+  overflow:hidden;
+  text-align: center;
+  background-color: #064CC2;
+  border: none;
+}
+
+.footer-elem {
+  flex-flow: row wrap;
+  justify-content: space-around;
+  display: block;
+  padding: 5px 30px 5px 30px;
+  border:none;
+  width:25%;
+  font-weight:300;
+  color: white;
+}
+
 
 /*Style for main page*/
 .main {
@@ -91,17 +242,4 @@ html, body, div {
 /*Style for contac page*/
 .contact {
   margin-top: 100px;
-}
-
-/*Style for footer*/
-.footer-bar {
-  background-color:rgb(210, 219, 242);
-  padding: 20px;
-  margin: auto;
-  width: 100%;
-  height: 90px;
-  position: fixed;
-  overflow: hidden;
-  bottom:0;
-  left:0;
 }

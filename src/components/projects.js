@@ -4,10 +4,10 @@ import {GridList, GridTile} from 'material-ui/GridList';
 import IconButton from 'material-ui/IconButton';
 import Subheader from 'material-ui/Subheader';
 import StarBorder from 'material-ui/svg-icons/toggle/star-border';
-import pet from '../images/gridlist/FindMyPet.jpg';
-import food from '../images/gridlist/FoodExplorer.jpg';
-import frogger from '../images/gridlist/Frogger.jpg';
-import goal from '../images/gridlist/goal.jpg';
+// import pet from '../images/gridlist/FindMyPet.jpg';
+// import food from '../images/gridlist/FoodExplorer.jpg';
+// import frogger from '../images/gridlist/Frogger.jpg';
+// import goal from '../images/gridlist/goal.jpg';
 
 
 
@@ -26,25 +26,25 @@ const styles = {
 
 const tilesData = [
   {
-    img: frogger,
+    // img: frogger,
     title: 'Frogger Arcade Game',
     subtitle: 'Lorem ipsum dolor sit amet, curae turpis rutrum diam orci neque egestas, orci egestas, fringilla curabitur luctus, magnis metus nostra.',
     author: 'Nina Louw'
   },
   {
-    img: goal,
+    // img: goal,
     title: 'Goal Tracker',
     subtitle: 'Lorem ipsum dolor sit amet, curae turpis rutrum diam orci neque egestas, orci egestas, fringilla curabitur luctus, magnis metus nostra.',
     author: 'Nina Louw'
   },
   {
-    img: pet,
+    // img: pet,
     title: 'Find My Pet Group Project',
     subtitle: 'Lorem ipsum dolor sit amet, curae turpis rutrum diam orci neque egestas, orci egestas, fringilla curabitur luctus, magnis metus nostra.',
     author: 'Nina Louw'
   },
   {
-    img: food,
+    // img: food,
     title: 'Food Explorer',
     subtitle: 'Lorem ipsum dolor sit amet, curae turpis rutrum diam orci neque egestas, orci egestas, fringilla curabitur luctus, magnis metus nostra.',
     author: 'Nina Louw'
@@ -62,7 +62,7 @@ const Projects = () => (
       >
         {tilesData.map((tile) => (
           <GridTile
-            key={tile.img}
+            // key={tile.img}
             title={tile.title}
             subtitle={tile.subtitle}
             actionIcon={<IconButton><StarBorder color="white" /></IconButton>}

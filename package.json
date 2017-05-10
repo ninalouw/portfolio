@@ -27,9 +27,10 @@
     "jquery": "^2.2.1",
     "jsdom": "^8.1.0",
     "mocha": "^2.4.5",
-    "react": "^15.4.2",
+    "react": "^15.5.4",
     "react-addons-test-utils": "^0.14.7",
     "react-dom": "^15.4.2",
+    "react-materialize": "^0.18.3",
     "url-loader": "^0.5.8",
     "webpack": "^1.12.9",
     "webpack-dev-server": "^1.14.0"

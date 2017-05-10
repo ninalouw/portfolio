@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import Header from './header';
 import Footer from './footer';
+import injectTapEventPlugin from 'react-tap-event-plugin';
 
 export default class App extends Component {
   render() {
@@ -19,3 +20,5 @@ export default class App extends Component {
     );
   }
 }
+
+injectTapEventPlugin();

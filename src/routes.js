@@ -6,6 +6,7 @@ import About from './components/about';
 import Projects from './components/projects';
 import Education from './components/education';
 import Contact from './components/contact';
+import Skills from './components/skills';
 
 export default (
   <Route path="/" component={App} >
@@ -14,5 +15,6 @@ export default (
     <Route path="projects" component={Projects} />
     <Route path="education" component={Education}/>
     <Route path="contact" component={Contact} />
+    <Route path="skills" component={Skills} />
   </Route>
 );
