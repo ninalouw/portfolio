@@ -8,14 +8,12 @@ class Main extends Component {
     return (
         <div>
           <Row className='hero-image'>
-              <Col s={2} m={4} l={4}className ="hero-circle hero-text">
+              <Col s={12} m={9} l={9}className ="hero-circle hero-text">
                     <p className="header-greet"> Hi I'm </p>
                     <h1 className="header-name">Nina Mae Louw</h1>
-                    <p className="header-para">Web Developer & Web Designer</p>
+                    <p className="header-para">Web Developer & Designer</p>
               </Col>
-              <Col s={5} m={4} l={4}>
-              </Col>
-              <Col s={5} m={4} l={4}>
+              <Col s={12} m={3} l={3}>
                 <a href="https://github.com/ninalouw">
                   <FontAwesome className="fa-icon" name='github' size='2x'/>
                 </a>
@@ -27,19 +25,15 @@ class Main extends Component {
                 </a>
               </Col>
           </Row>
-              <Col s={5} m={4} l={4}>
-              </Col>
-              <Col s={5} m={4} l={4} className="facts-heading">
+              <Col s={12} m={12} l={12} className="facts-heading">
                 <h2>Fun Facts</h2>
-              </Col>
-              <Col s={5} m={4} l={4}>
               </Col>
           <Row>
           </Row>
               <Col s={12} m={12} l={12} className="facts-para">
-                <p>Graduate of CodeCore Bootcamp and Udacity Front-End Nanodegree.</p>
+                <p>Graduate of <a className="para-a" href='https://codecore.ca/'>CodeCore Bootcamp</a> and <a className="para-a" href='https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001'>Udacity</a> Front-End Nanodegree.</p>
                 <p>Currently building a Ruby on Rails web app with React with Redux.</p>
-                <p>Honing my Javascript with ‘JS The Weird Parts’ & ‘Advanced React with Redux’.</p>
+                <p>Honing my Javascript with <a className="para-a" href='https://www.udemy.com/understand-javascript/learn/v4/overview'>‘JS The Weird Parts’</a> & <a className="para-a" href='https://www.udemy.com/react-redux-tutorial/learn/v4/overview'>‘Advanced React with Redux’</a>.</p>
                 <p>Learning the ways of a Designer in Photoshop, Sketch & Illustrator & and becoming too enthused by typography.</p>
               </Col>
           <Row>

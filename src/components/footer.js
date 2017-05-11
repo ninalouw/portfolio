@@ -17,24 +17,24 @@ class Footer extends Component {
                   <FontIcon className="material-icons" style={iconStyles}>home</FontIcon><p>Get in Touch</p>
                 </Col>
                 <Col s={3} m={2} l={2} className="footer-elem">
-                  <FontIcon className="material-icons" style={iconStyles} color={red500}>phone</FontIcon><p>+1 604-405-6789</p>
+                  <FontIcon className="material-icons" style={iconStyles} color={red500}>phone</FontIcon><p>604 405 6789</p>
                 </Col>
                 <Col s={3} m={2} l={2} className="footer-elem">
-                  <FontIcon className="material-icons" style={iconStyles} color={yellow500}>email</FontIcon><p>info@hellothere.com</p>
+                  <a href="mailto:ninalouw@mac.com"><FontIcon className="material-icons" style={iconStyles} color={yellow500}>email</FontIcon><p>ninalouw@mac.com</p></a>
                 </Col>
-                <Col s={1} m={2} l={2} className="footer-elem">
+                <Col s={3} m={2} l={2} className="footer-elem">
                   <a href="https://www.linkedin.com/in/ninamaelouw/">
-                    <FontAwesome className="fa-icon" name='linkedin' size='2x'/>
+                    <FontAwesome className="fa-icon-footer" name='linkedin' size='2x'/>
                   </a>
                </Col>
-               <Col s={1} m={2} l={2} className="footer-elem">
-                 <a href="https://www.linkedin.com/in/ninamaelouw/">
-                   <FontAwesome className="fa-icon" name='twitter' size='2x'/>
+               <Col s={3} m={2} l={2} className="footer-elem">
+                 <a href="https://twitter.com/ninamaelouw">
+                   <FontAwesome className="fa-icon-footer" name='twitter' size='2x'/>
                  </a>
               </Col>
-              <Col s={1} m={2} l={2} className="footer-elem">
-                <a href="https://www.linkedin.com/in/ninamaelouw/">
-                  <FontAwesome className="fa-icon" name='github' size='2x'/>
+              <Col s={3} m={2} l={2} className="footer-elem">
+                <a href="https://github.com/ninalouw">
+                  <FontAwesome className="fa-icon-footer" name='github' size='2x'/>
                 </a>
              </Col>
           </Row>

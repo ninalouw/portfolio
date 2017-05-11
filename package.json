@@ -26,6 +26,7 @@
     "image-webpack-loader": "^3.3.0",
     "jquery": "^2.2.1",
     "jsdom": "^8.1.0",
+    "materialize-css": "^0.98.2",
     "mocha": "^2.4.5",
     "react": "^15.5.4",
     "react-addons-test-utils": "^0.14.7",

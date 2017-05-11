@@ -1,14 +1,32 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import {Row, Col} from 'react-materialize';
+import FlatButton from 'material-ui/FlatButton';
+import FontIcon from 'material-ui/FontIcon';
 
 class Skills extends Component {
   render () {
     return(
-      <div className='about'>
-        <div className='about-text'>
-          <h1>My Skills</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
+      <div className='skills'>
+        <Row className='skills-header'>
+          <Col s={2} m={2} l={2} className='skills-circle'>
+            <h1 className='skills-h1'>Skills</h1>
+          </Col>
+        </Row>
+        <Row className='skills-h2-row'>
+          <Col s={3} m={4} l={4} >
+            <h2 className='skills-h2'>I'm proficient in ...</h2>
+          </Col>
+          <Col s={3} m={4} l={4} >
+            <FlatButton
+                href="https://github.com/ninalouw"
+                target="_blank"
+                label="See GitHub"
+                primary={true}
+                icon={<FontIcon className="muidocs-icon-custom-github" />}
+              />
+          </Col>
+        </Row>
       </div>
     );
   }

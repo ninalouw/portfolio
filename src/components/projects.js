@@ -8,6 +8,7 @@ import StarBorder from 'material-ui/svg-icons/toggle/star-border';
 // import food from '../images/gridlist/FoodExplorer.jpg';
 // import frogger from '../images/gridlist/Frogger.jpg';
 // import goal from '../images/gridlist/goal.jpg';
+import {Row, Col} from 'react-materialize';
 
 
 
@@ -53,6 +54,12 @@ const tilesData = [
 
 const Projects = () => (
   <div className='projects'>
+    <Row className='projects-header'>
+      <Col s={8} m={12} l={12} className='projects-h1'>
+        <h1>Projects</h1>
+      </Col>
+    </Row>
+
     <div style={styles.root}>
       <GridList
         cols={2}

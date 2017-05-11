@@ -1,5 +1,5 @@
 html, body, div {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   margin:0;
   padding: 0;
   box-sizing: border-box;
@@ -16,7 +16,7 @@ html, body, div {
 
 .navbar-ul {
   display: flex;
-  background-color: white;
+  background-image: linear-gradient(-360deg, rgb(217, 231, 244), rgb(255, 255, 255));
   overflow: hidden;
   text-align: center;
   margin: auto;
@@ -54,6 +54,7 @@ html, body, div {
     text-decoration: none;
     color: black;
     box-shadow: inset 0 -2px 0 0 #064CC2;
+    cursor:pointer;
 }
 
 /* Add a color to the active/current link */
@@ -128,9 +129,10 @@ html, body, div {
 
 .hero-circle{
   background-color: rgb(0, 188, 212);
-  width:400px;
+  /*width:400px;*/
   height:400px;
-  border-radius: 200px;
+  /*border-radius: 200px;*/
+  /*border-radius:25%;*/
   -webkit-box-shadow: 3px 2px 9px 1px rgba(5,11,54,1);
 -moz-box-shadow: 3px 2px 9px 1px rgba(5,11,54,1);
 box-shadow: 3px 2px 9px 1px rgba(5,11,54,1);
@@ -165,15 +167,29 @@ box-shadow: 3px 2px 9px 1px rgba(5,11,54,1);
   margin-bottom:12px;
 }
 
+.para-a {
+  text-decoration: none;
+  color: black;
+}
+.para-a:hover {
+  color: #064CC2;
+  font-weight: 400;
+  cursor:pointer;
+}
+
 .fa-icon {
   color: white;
   margin: 12px;
-  /*transform: rotate(10deg);*/
+}
+
+.fa-icon:hover {
+  opacity: 0.4;
+  cursor:pointer;
 }
 
 .footer {
   width: 100%;
-  height: 100px;
+  height: 120px;
   margin-left: auto;
   margin-right:auto;
   padding:15px;
@@ -188,58 +204,188 @@ box-shadow: 3px 2px 9px 1px rgba(5,11,54,1);
   flex-flow: row wrap;
   justify-content: space-around;
   display: block;
-  padding: 5px 30px 5px 30px;
+  padding: 5px 10px 5px 10px;
   border:none;
   width:25%;
   font-weight:300;
   color: white;
+  font-size:0.8rem;
 }
 
-
-/*Style for main page*/
-.main {
-  width: 100%;
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 90px;
-  overflow: auto;
-  padding:20px;
+.fa-icon-footer {
+  color: white;
 }
+
 
 /*Style for about page*/
-.about {
-  margin-top: 100px;
-  overflow: auto;
+.about-header {
+  background-image: linear-gradient(-360deg, #020085, #0b6ca3);
+  width:100%;
+  height: 170px;
+  padding:15px;
+  padding-left: 60px;
 }
 
-.about-text {
-  width: 100%;
-  float: right;
-  /*position: relative;*/
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 15px;
-  overflow: auto;
-  padding:20px;
+.about-circle {
+  background-color: rgb(0, 188, 212);
+  /*width:50px;*/
+  height:100px;
+  /*border-radius: 50px;*/
+  -webkit-box-shadow: 3px 2px 9px 1px rgba(5,11,54,1);
+  -moz-box-shadow: 3px 2px 9px 1px rgba(5,11,54,1);
+  box-shadow: 3px 2px 9px 1px rgba(5,11,54,1);
+}
+
+.about-h1 {
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  margin-top:36px;
+  padding-top:24px;
+  padding-left: 40px;
+  margin-left:auto;
+  margin-right:auto;
+  width:100%;
+  color: white;
+  font-weight: bold;
+  font-size:2rem;
 }
 
 .about-avatar {
-  width: 100%;
+  width: 90%;
   float: left;
+  margin-left:20px;
+}
+
+.about-row-1{
+  display: flex;
+}
+
+.about-para {
+  font-family: 'Open Sans', sans-serif;
+  font-weight:400;
+  font-size: 1.2rem;
+  color: black;
+  text-align: left;
+  -webkit-box-shadow: 3px 2px 9px 1px rgba(251, 251, 254, 1);
+-moz-box-shadow: 3px 2px 9px 1px rgba(251, 251, 254, 1);
+box-shadow: 3px 2px 9px 1px rgba(251, 251, 254, 1);
+}
+
+.about-para-h3 {
+  font-family: 'Open Sans', serif;
+  text-align: center;
+  margin-left:auto;
+  margin-right:auto;
+  width:100%;
+  color: #020085;
+  font-weight: 400;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+}
+
+.education-row {
+  padding-top:40px;
+}
+
+.coding-rectangle {
+  background-color: rgb(0, 188, 212);
+  height:300px;
+  -webkit-box-shadow: 3px 2px 9px 1px rgba(251, 251, 254, 1);
+-moz-box-shadow: 3px 2px 9px 1px rgba(251, 251, 254, 1);
+box-shadow: 3px 2px 9px 1px rgba(221, 221, 235, 1);
+}
+
+.education-h2 {
+  font-family: 'Playfair Display', serif;
+  font-weight:bold;
+  text-align: center;
+  /*padding-left:40px;*/
+    padding-top:80px;
+  margin-left:auto;
+  margin-right:auto;
+  width:100%;
+  color: white;
+  font-size: 2.1rem;
+}
+
+.education-h3 {
+  font-family: 'Open Sans', serif;
+  text-align: left;
+  margin-left:auto;
+  margin-right:auto;
+  width:100%;
+  color: #070665;
+  font-weight: 400;
+  font-size: 1.6rem;
+  padding-left: 45px;
+}
+
+.education-para {
+  font-family: 'Open Sans', sans-serif;
+  font-weight:300;
+  font-size: 1.2rem;
+  color: black;
+  text-align: left;
+  padding-left: 50px;
 }
 
 /*Style for projects page*/
-.projects {
-  margin-top: 120px;
+.projects-header {
+  background-image: linear-gradient(-360deg, #020085, #0b6ca3);
+  width:100%;
+  height: 150px;
 }
 
-/*Style for education page*/
-.education {
-  margin-top: 100px;
+.projects-h1 {
+  font-family: 'Playfair Display', serif;
+  font-weight:400;
+  font-size: 2rem;
+  color:white;
+  text-align: left;
+  margin-left: 40px;
+  margin-right: auto;
+  padding:10px;
+  width:100%;
 }
 
-/*Style for contac page*/
-.contact {
-  margin-top: 100px;
+/*Style for skills page*/
+.skills-header {
+  background-image: linear-gradient(-360deg, #020085, #0b6ca3);
+  width:100%;
+  height: 170px;
+  padding:15px;
+}
+
+.skills-circle {
+  background-color: rgb(0, 188, 212);
+  width:100px;
+  height:100px;
+  /*border-radius: 50px;*/
+  -webkit-box-shadow: 3px 2px 9px 1px rgba(5,11,54,1);
+-moz-box-shadow: 3px 2px 9px 1px rgba(5,11,54,1);
+box-shadow: 3px 2px 9px 1px rgba(5,11,54,1);
+}
+.skills-h1 {
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  margin-top:36px;
+  padding-top:24px;
+  padding-left: 40px;
+  margin-left:auto;
+  margin-right:auto;
+  width:100%;
+  color: white;
+  font-weight: 400;
+  font-size:2rem;
+}
+
+.skills-h2 {
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  margin-left:auto;
+  margin-right:auto;
+  width:100%;
+  color: black;
+  font-weight: 400;
+  font-size: 1.5rem;
 }

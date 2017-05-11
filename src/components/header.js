@@ -15,17 +15,14 @@ class Header extends Component {
                     <Link to='about'>
                         <li className="navbar-li">About</li>
                     </Link>
-                    <Link to='education'>
-                      <li className="navbar-li">Education</li>
-                    </Link>
-                    <Link to='skills'>
-                      <li className="navbar-li">Skills</li>
-                    </Link>
                     <Link to='projects'>
                         <li className="navbar-li">Projects</li>
                     </Link>
+                    <Link to='skills'>
+                        <li className="navbar-li">Skills</li>
+                    </Link>
                     <Link to='contact'>
-                      <li className="navbar-li">Contact</li>
+                        <li className="navbar-li">Contact</li>
                     </Link>
                 </ul>
             </Col>
