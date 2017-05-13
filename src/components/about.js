@@ -7,13 +7,27 @@ class About extends Component {
   render () {
     return(
       <div className='about'>
-        <Row className='about-header'>
-          <Col s={2} m={2} l={2} className='about-circle'>
-            <h1 className='about-h1'>About</h1> </Col>
+        {/* <section className="mast">
+          <figure className="mast-bg"></figure>
+          <div className="grid">
+            <div className="mast-content">
+              <h1 className="mast-title-about">About</h1>
+            </div>
+              <figure className="mast-graphic">
+              <img className="mast-graphic-img" src=" "/>
+            </figure>
+          </div>
+        </section> */}
+        <Row className='skills-header'>
+          <Col s={2} m={2} l={2} className='skills-circle'>
+            <h1 className='skills-h1'>About</h1>
+          </Col>
         </Row>
+
         <Row className='about-row-1'>
           <Col s={12} m={12} l={12}>
             <Avatar
+                className="about-avatar"
                 src='https://avatars1.githubusercontent.com/u/17684394?v=3&amp;s=460'
                 size={200}
                 style={{margin:15, marginLeft:40, border: 0}} />
@@ -43,11 +57,11 @@ class About extends Component {
           </Col>
           <Col s={12} m={6} l={6}>
             <h3 className="education-h3">Web Development and Interactive Design Diploma</h3>
-            <p className="education-para">Vancouver Institute of Media Arts, 2017-2018</p>
+            <p className="education-para"><a className="para-a" href='https://www.vanarts.com'>Vancouver Institute of Media Arts</a>, 2017-2018</p>
             <h3 className="education-h3">Web Development Certificate</h3>
-            <p className="education-para">CodeCore Developer Bootcamp, 2016</p>
+            <p className="education-para"><a className="para-a" href='https://codecore.ca/'>CodeCore Developer Bootcamp</a>, 2016</p>
             <h3 className="education-h3">Front-End Developer Nanodegree</h3>
-            <p className="education-para">Udacity FEND Program, 2016-2017</p>
+            <p className="education-para"><a className="para-a" href='https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001'>Udacity FEND Program</a>, 2016-2017</p>
           </Col>
         </Row>
         <Row className="education-row">
@@ -56,11 +70,11 @@ class About extends Component {
           </Col>
           <Col s={12} m={6} l={6} className=''>
             <h3 className="education-h3" >Masters in English Literature</h3>
-            <p className="education-para">University of Oxford, 2015</p>
+            <p className="education-para"><a className="para-a" href='http://www.english.ox.ac.uk/masters-programmes'>University of Oxford</a>, 2015</p>
             <h3 className="education-h3" >BA Honours in English</h3>
-            <p className="education-para">University of Stellenbosch, 2013</p>
+            <p className="education-para"><a className="para-a" href='http://www0.sun.ac.za/pgstudies/postgraduate-programmes/faculty-of-arts-and-social-sciences-1/department-of-english/bahons-english-studies.html'>University of Stellenbosch</a>, 2013</p>
             <h3 className="education-h3" >BA Humanities</h3>
-            <p className="education-para">University of Stellenbosch, 2012</p>
+            <p className="education-para"><a className="para-a" href='http://www.sun.ac.za/english/faculty/arts'>University of Stellenbosch</a>, 2012</p>
           </Col>
         </Row>
 

@@ -10,11 +10,11 @@ export default class App extends Component {
     return (
       <MuiThemeProvider>
         <div className="app">
-          <Header />
           <div className="app-content">
+          <Header/>
             {this.props.children}
-          </div>
           <Footer />
+          </div>
         </div>
       </MuiThemeProvider>
     );

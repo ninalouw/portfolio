@@ -11,8 +11,8 @@ class Footer extends Component {
           marginRight: 24,
         };
         return (
-          <div>
-            <Row className="footer">
+          <footer className="footer">
+            <Row>
                 <Col s={3} m={2} l={2} className="footer-elem">
                   <FontIcon className="material-icons" style={iconStyles}>home</FontIcon><p>Get in Touch</p>
                 </Col>
@@ -20,7 +20,7 @@ class Footer extends Component {
                   <FontIcon className="material-icons" style={iconStyles} color={red500}>phone</FontIcon><p>604 405 6789</p>
                 </Col>
                 <Col s={3} m={2} l={2} className="footer-elem">
-                  <a href="mailto:ninalouw@mac.com"><FontIcon className="material-icons" style={iconStyles} color={yellow500}>email</FontIcon><p>ninalouw@mac.com</p></a>
+                  <a className="footer-a" href="mailto:ninamaelouw@gmail.com"><FontIcon className="material-icons" style={iconStyles} color={yellow500}>email</FontIcon><p>ninalouw@mac.com</p></a>
                 </Col>
                 <Col s={3} m={2} l={2} className="footer-elem">
                   <a href="https://www.linkedin.com/in/ninamaelouw/">
@@ -38,7 +38,7 @@ class Footer extends Component {
                 </a>
              </Col>
           </Row>
-          </div>
+        </footer>
         );
     }
 }

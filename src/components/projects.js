@@ -54,9 +54,9 @@ const tilesData = [
 
 const Projects = () => (
   <div className='projects'>
-    <Row className='projects-header'>
-      <Col s={8} m={12} l={12} className='projects-h1'>
-        <h1>Projects</h1>
+    <Row className='skills-header'>
+      <Col s={2} m={2} l={2} className='skills-circle'>
+        <h1 className='skills-h1'>Projects</h1>
       </Col>
     </Row>
 
